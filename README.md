@@ -24,4 +24,9 @@ dictionaries, and a basic unigram language model for evaluation.
 This database is mostly interesting for quickly testing the training
 scripts, as it is quite small and simplistic.
 
+To run basic training:
+
+    docker run -t dhdaines/sphinxtrain -t an4 setup
+    docker run -v $PWD:/st -t dhdaines/sphinxtrain run
+
 See [LICENSE](./LICENSE) for terms of use.
